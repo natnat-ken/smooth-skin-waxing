@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Black background */
+    color: #FFD700; /* Gold text color */
+}
+
+header {
+    background-color: #333333; /* Dark grey header */
+    color: #FFD700; /* Gold text */
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #FFD700; /* Gold links */
+    text-decoration: none;
+}
+
+/* Home Section */
+.hero {
+    background-color: #444444; /* Dark grey for hero section */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Service Cards */
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    border: 1px solid #FFD700; /* Gold border around service cards */
+    border-radius: 5px; /* Rounded corners */
+    margin: 10px;
+    padding: 15px;
+    width: 250px; /* Fixed width for cards */
+    background-color: #222222; /* Dark background for cards */
+}
+
+.service-card img {
+    width: 100%; /* Make the image take the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Buttons */
+button {
+    background-color: #FFD700; /* Gold button color */
+    color: black; /* Black text on buttons */
+    border: none;
+    border-radius: 5px; /* Rounded corners for buttons */
+}
+
+button:hover {
+   background-color: #FFC107; /* Slightly darker gold on hover */
+}
+
+/* Invoice Section */
+#invoiceDetails {
+   border: 1px solid #FFD700; /* Gold border around invoice details */
+   padding: 15px; /* Added padding for better spacing */
+}
+
+/* About Us Section */
+#about {
+   margin-top: 20px;
+}
+
+#about h2 {
+   color: #FFD700; /* Gold header color */
+}
+
+/* Footer Styles */
+footer {
+   background-color: #333333; /* Dark grey footer background */
+   color: #FFD700; /* Gold text in footer */
+   text-align: center;
+   padding: 10px 0; /* Added padding for spacing in footer */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+   .service-container {
+       flex-direction: column; /* Stack cards on small screens */
+       align-items: center; 
+   }
+
+   .service-card {
+       width: auto; /* Allow cards to take full width on small screens */
+       margin-bottom: 15px; /* Space between stacked cards */
+   }
+}
